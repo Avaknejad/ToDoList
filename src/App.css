@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Rubik';
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #E5E5E5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-app{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 48px;
+  width: 548px;
+  height: 496px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.todo-input{
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 20px;
+
+  width: 246px;
+  height: 80px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.todo-input-edit{
+  width: 214px;
+  height: 48px;
+
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  color: #161717;
+  flex: none;
+  order: 0;
+  flex-grow: 0; 
+}
+.todo-input-checkbox{
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 8px;
+  gap: 12px;
+
+  width: 263px;
+  height: 80px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.todo-input-checkbox-checkbox{
+  width: 48px;
+  height: 48px;
+  flex: none;
+  order: 0;
+  flex-grow: 0; 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.todo-inside-checkbox{
+  position: absolute;
+  left: 21.43%;
+  right: 21.43%;
+  top: 26.8%;
+  bottom: 25.01%;
+
+  background: #FFFFFF;
+}
+.todo-inside-checkbox-vector{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #29ABE2;
+}
+.todo-input-checkbox-text{
+  width: 159px;
+  height: 38px;
+
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-decoration-line: line-through;
+
+  color: #161717;
+
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
